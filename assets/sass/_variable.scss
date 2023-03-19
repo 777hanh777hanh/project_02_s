@@ -1,1 +1,30 @@
 // sass ./assets/sass/style.scss ./assets/css/style.css -w
+
+$primaryColor: #1ebfc1;
+$navText: #2f3a3b;
+$sectionDesc: #767e7e;
+$textColor: #9da6a5;
+$headingColor: #0d1111;
+$footerHeading: #2e2e2e;
+$footerText: #535353;
+$copyRightColor: #b0b5b4;
+
+@mixin button($w: 186px, $h: 68px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $w;
+    height: $h;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 27px;
+    color: #ffffff;
+    border: 1px solid $primaryColor;
+    background: $primaryColor;
+    border-radius: 14px;
+
+    &:hover {
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+        opacity: 0.9;
+    }
+}

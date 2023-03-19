@@ -9,6 +9,22 @@ html {
 }
 
 body {
+    display: flex;
+    width: 100%;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Logo
+.logo {
+    &__img {
+        width: 127px;
+    }
 }

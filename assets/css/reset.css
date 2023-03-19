@@ -126,4 +126,5 @@ table {
 /* remote underline of a tag */
 a {
     text-decoration: none;
+    color: currentColor;
 }
