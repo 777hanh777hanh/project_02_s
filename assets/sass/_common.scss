@@ -51,9 +51,16 @@ body {
 
         &--small {
             font-size: 1.4rem;
-            line-height: 1.5;
             color: $textColor;
         }
+    }
+
+    &__label {
+        letter-spacing: 5px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: $textColor;
     }
 }
 

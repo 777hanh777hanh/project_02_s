@@ -66,6 +66,12 @@ body {
 }
 .section__desc--small {
   font-size: 1.4rem;
+  color: #9da6a5;
+}
+.section__label {
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #9da6a5;
 }
@@ -322,6 +328,44 @@ body {
 
 .main {
   padding-top: 65px;
+}
+
+.feature {
+  padding: 65px 0;
+}
+.feature__heading, .feature__desc {
+  margin-top: 18px;
+  max-width: 52%;
+}
+.feature__list {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 200px;
+}
+.feature__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 102px;
+  height: 106px;
+  border-radius: 18px;
+  background-color: var(--bg);
+}
+.feature__img {
+  display: block;
+}
+.feature__item-title {
+  margin-top: 26px;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #0d1111;
+}
+.feature__item-desc {
+  margin-top: 16px;
+  max-width: 223px;
+  font-size: 1.6rem;
 }
 
 .popular {

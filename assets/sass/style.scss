@@ -239,6 +239,50 @@
 }
 
 // Feature
+.feature {
+    padding: 65px 0;
+
+    &__heading,
+    &__desc {
+        margin-top: 18px;
+        max-width: 52%;
+    }
+
+    &__list {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 200px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 102px;
+        height: 106px;
+        border-radius: 18px;
+        background-color: var(--bg);
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__item-title {
+        margin-top: 26px;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: $headingColor;
+    }
+
+    &__item-desc {
+        margin-top: 16px;
+        max-width: 223px;
+        font-size: 1.6rem;
+    }
+}
 
 // Popular
 .popular {
