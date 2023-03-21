@@ -28,3 +28,43 @@ body {
         width: 127px;
     }
 }
+
+.btn {
+    @include button;
+}
+
+.section {
+    &__heading {
+        font-weight: 700;
+        font-size: 4.2rem;
+        line-height: 1.5;
+        color: $headingColor;
+    }
+
+    &__desc {
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: $sectionDesc;
+
+        &--small {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            color: $textColor;
+        }
+    }
+}
+
+.category {
+    &__text {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: $sectionDesc;
+    }
+}
+
+.avatar {
+    @include avatar(33px, 33px, #bf83ff);
+}

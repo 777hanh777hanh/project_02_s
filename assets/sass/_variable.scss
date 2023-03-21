@@ -5,6 +5,7 @@ $navText: #2f3a3b;
 $sectionDesc: #767e7e;
 $textColor: #9da6a5;
 $headingColor: #0d1111;
+$heroCardColor: #ff8282;
 $footerHeading: #2e2e2e;
 $footerText: #535353;
 $copyRightColor: #b0b5b4;
@@ -26,5 +27,39 @@ $copyRightColor: #b0b5b4;
     &:hover {
         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
         opacity: 0.9;
+    }
+
+    &--circle {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@mixin avatar($w: 100px, $h: 100px, $bg: transparent) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    width: $w;
+    height: $h;
+    overflow: hidden;
+    background-color: $bg;
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        color: #ffffff;
     }
 }
