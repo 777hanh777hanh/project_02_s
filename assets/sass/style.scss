@@ -428,3 +428,120 @@
         margin-top: 11px;
     }
 }
+
+// Comment
+.comment {
+    padding: 65px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 36%;
+    }
+
+    &__content {
+        margin-top: 27px;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 1.5;
+        color: #5d6564;
+    }
+
+    &__auth {
+        margin-top: 33px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #070707;
+
+        &--role {
+            color: $sectionDesc;
+        }
+    }
+
+    &__action {
+        margin-top: 52px;
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__btn {
+        width: 50px;
+        height: 50px;
+
+        &-icon {
+            &--right {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    &__member {
+        flex: 1;
+        position: relative;
+        height: 481px;
+        width: 679px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .member {
+            &__row {
+                // flex: 1;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                &:first-child {
+                    height: 107px;
+
+                    .member__avatar {
+                        width: 92px;
+                        height: 92px;
+                        margin-right: 333px;
+
+                        &:last-child {
+                            width: 110px;
+                            height: 110px;
+                            margin: 0;
+                            margin-top: 19px;
+                            margin-right: 50px;
+                            margin-bottom: -22px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    column-gap: 195px;
+
+                    .member__avatar:last-child {
+                        width: 235px;
+                        height: 235px;
+                        margin-right: 171px;
+                    }
+                }
+
+                &:last-child {
+                    align-items: end;
+                    column-gap: 279px;
+
+                    .member__avatar:last-child {
+                        margin-right: 32px;
+                        margin-bottom: 29px;
+                    }
+                }
+            }
+
+            &__avatar {
+                width: 78px;
+                height: 78px;
+            }
+        }
+    }
+}
+
+// Start
