@@ -545,3 +545,14 @@
 }
 
 // Start
+.cta {
+    background: #def6f5;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 76px 0 88px;
+        margin-right: 135px;
+    }
+}

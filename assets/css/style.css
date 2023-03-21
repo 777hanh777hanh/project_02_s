@@ -582,4 +582,15 @@ body {
   height: 78px;
 }
 
+.cta {
+  background: #def6f5;
+}
+.cta__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 76px 0 88px;
+  margin-right: 135px;
+}
+
 /*# sourceMappingURL=style.css.map */
