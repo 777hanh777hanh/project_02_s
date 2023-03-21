@@ -10,6 +10,7 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   width: 100%;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -317,6 +318,111 @@ body {
 }
 .header__hero-avatars .avatar + .avatar {
   margin-left: -7px;
+}
+
+.main {
+  padding-top: 65px;
+}
+
+.popular {
+  padding: 65px 0;
+}
+.popular__heading {
+  max-width: 51%;
+}
+.popular__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+.popular__desc {
+  margin-top: 0;
+  max-width: 51%;
+}
+.popular__link {
+  text-align: end;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #1ebfc1;
+  text-underline-offset: 2px;
+}
+.popular__link:hover {
+  text-decoration-line: underline;
+}
+.popular__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 47px;
+  margin-top: 80px;
+}
+.popular__item {
+  position: relative;
+  max-width: 359px;
+  height: 521px;
+  display: flex;
+  justify-content: center;
+}
+.popular__item-image {
+  width: 100%;
+  height: 393px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.popular__item-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #d0efed;
+  opacity: 0.35;
+}
+.popular__item-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.popular__item-card {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 18px 25px;
+  width: calc(100% - 34px);
+  height: 195px;
+  box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.popular__item-fee, .popular__item-title {
+  font-size: 2.2rem;
+}
+.popular__item-price {
+  margin-top: 16px;
+}
+.popular__item-desc {
+  margin-top: 6px;
+}
+.popular__item-row {
+  display: flex;
+  margin-top: 18px;
+  column-gap: 10px;
+}
+.popular__item-info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 0px;
+}
+.popular__item-info::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1ebfc1;
 }
 
 /*# sourceMappingURL=style.css.map */
