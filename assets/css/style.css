@@ -469,4 +469,24 @@ body {
   background: #1ebfc1;
 }
 
+.info {
+  padding: 65px 0;
+}
+.info__list {
+  padding: 135px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 200px;
+}
+.info__item {
+  text-align: center;
+}
+.info__heading {
+  font-size: 6.2rem;
+}
+.info__desc {
+  margin-top: 11px;
+}
+
 /*# sourceMappingURL=style.css.map */

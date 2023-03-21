@@ -403,3 +403,28 @@
         }
     }
 }
+
+// Info
+.info {
+    padding: 65px 0;
+
+    &__list {
+        padding: 135px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 200px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 6.2rem;
+    }
+
+    &__desc {
+        margin-top: 11px;
+    }
+}
